@@ -42,7 +42,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: SafeArea(
         child: Column(
           children: [
-
             // 🟦 Botón SALTAR en la parte superior derecha
             Padding(
               padding: const EdgeInsets.only(top: 16, right: 16),
@@ -55,10 +54,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     },
                     child: const Text(
                       "Saltar",
-                      style: TextStyle(
-                        color: Colors.black87,
-                        fontSize: 16,
-                      ),
+                      style: TextStyle(color: Colors.black87, fontSize: 16),
                     ),
                   ),
                 ],
@@ -72,11 +68,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onPageChanged: (index) {
                   setState(() => currentPage = index);
                 },
-                children: [
-                  _pagina1(),
-                  _pagina2(),
-                  _pagina3(),
-                ],
+                children: [_pagina1(), _pagina2(), _pagina3()],
               ),
             ),
 
@@ -98,7 +90,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          
           // ICONO SUPERIOR
           const Icon(Icons.directions_car, size: 80, color: Colors.black),
 
@@ -119,10 +110,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           const Text(
             "Bienvenidos a neumaTik",
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
 
           const SizedBox(height: 10),
@@ -139,10 +127,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           const Text(
             "Con la innovación del uso del OBD2",
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 19,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
           ),
         ],
       ),
