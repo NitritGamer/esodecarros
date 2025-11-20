@@ -210,14 +210,24 @@ ElevatedButton(
                 ],
               ),
 
-              const SizedBox(height: 40),
-
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text(
-                  "Volver al inicio",
-                  style: TextStyle(fontSize: 16, color: Colors.black87),
-                ),
+              // Botón para ir a iniciar sesión
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("¿Ya tienes cuenta? "),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/login');
+                    },
+                    child: const Text(
+                      "Inicia sesión",
+                      style: TextStyle(
+                        color: Colors.lightBlueAccent,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

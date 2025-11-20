@@ -137,11 +137,7 @@ class PantallaPerfil extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.pushNamedAndRemoveUntil(
-                  context,
-                  '/login',
-                  (route) => false,
-                );
+                Navigator.pushReplacementNamed(context, '/login');
               },
               child: const Text(
                 "Cerrar Sesión",
